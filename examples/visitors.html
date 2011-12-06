@@ -52,7 +52,8 @@ $(function () {
     var options = {
         xaxis: { mode: "time", tickLength: 5 },
         selection: { mode: "x" },
-        grid: { markings: weekendAreas }
+//        grid: { markings: weekendAreas }
+        grid: { labelMargin: 10, markings: weekendAreas }
     };
     
     var plot = $.plot($("#placeholder"), [d], options);
